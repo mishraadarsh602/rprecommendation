@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>RP recommendation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!--font-awesome-cdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style>
+        body {
+            background: url(img/contact-us.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span></div>
+        <a href="index.html">
+            <div class="logo"><img src="img/logo.jpg" alt="">
+            </div>
+        </a>
+        <div class="nav-items" id="top">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="actived" href="contactus.html">Contact us</a></li>
+            <li><a href="https://sowiindia2020.blogspot.com/">Blogs</a></li>
+            <li><a href="#" type="button" data-toggle="modal" data-target="#loginModal">Login</a></li>
+            <li><a href="#" type="button" data-toggle="modal" data-target="#signupModal">Signup</a></li>
+        </div>
+        <div class="search-icon">
+            <span class="fas fa-search"></span></div>
+        <div class="cancel-icon">
+            <span class="fas fa-times"></span></div>
+        <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+    </nav>
+
+    <!------modal for signup-->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="sign-up-form">
+                        <img src="img/signup-icon.png" class="signup-icon" alt="">
+                        <h2>Sign up</h2>
+                        <form action="">
+                            <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" id="signupEmail" name="signupEmail" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Username" id="signupUsername" name="signupUsername" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password" id="signupPassword" name="signupPassword">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label " for="exampleCheck1">I agree to the terms and services</label>
+                        </div>
+                        <div class="signup-btn-out">
+                        <input type="submit" class="signup-btn" value="Signup">  
+                    </div>
+                        <hr>
+                       <p style="font-size:.8em;color:rgb(105, 105, 7);">Already have an account ? <a href="#" data-toggle="modal" data-target="#loginModal">Log in</a></p>
+                    </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!------modal for login-->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="sign-up-form">
+                    <img src="img/signup-icon.png" class="signup-icon" alt="">
+                    <h2>Login Here</h2>
+                    <form action="">
+                        <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email" id="loginEmail" name="loginEmail" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" id="loginPassword" name="loginPassword">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label " for="exampleCheck1">Check me out</label>
+                    </div>
+                    <div class="signup-btn-out">
+                    <input type="submit" class="signup-btn" value="Login">  
+                </div>
+                    <hr>
+                   <p style="font-size:.8em;color:rgb(105, 105, 7);">Don't have an account ? <a href="#" data-toggle="modal" data-target="#signupModal">Sign up</a></p>
+                </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+    <!--contact us-->
+    <div class="container contact-form my-4">
+        <h2 class="text-center mt-4">Contact us</h2>
+        <hr style="border-bottom:1px solid white;">
+        <div class="row col-sm-8 col-md-12">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="contactName" name="contactName" placeholder="Name"> 
+                    </div>
+                    <div class="form-group">
+                
+                        <input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="Email address">
+                    </div>
+                    <div class="form-group">
+                     
+                        <input type="text" class="form-control" id="contactPhone" name="contactPhone" placeholder="Phone No">
+                    </div>
+                    <div class="form-group">
+                       
+                        <textarea class="form-control" placeholder="Your Message here.." rows="3" id="contactMessage" name="contactMessage"></textarea>
+                    </div>
+                    <div class="form-group">
+                     
+                        <input type="submit" class="form-control" name="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4 mt-2">
+                <address><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;
+                    Location: Aya Nagar, New Delhi-110047</address>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;
+                    Email: rpbandhwa@gmail.com</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Phone: 7042110747</p>
+            </div>
+
+           
+           
+        </div>
+    </div>
+
+
+
+    <!-------footer------>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 ">
+                    <h1>RP recommendation</h1>
+                    <p style="font-size:.8em;">RP recommendation is a blog which recommend best health product, beauty
+                        product, Clothes, and your daily life need, which is recommended after searching from various
+                        digital platforms and based on local reviews. For any products, services or any type of query
+                        please contact us . Thank You ! </p>
+                </div>
+
+
+                <div class="col-6 col-md-4 ">
+                    <h1>Company</h1>
+                    <p>About us</p>
+                    <p>Contact us</p>
+                    <p>Blog</p>
+                    <p>Affiliate</p>
+                </div>
+                <div class="col-6 col-md-4 ">
+                    <h1>Follow us </h1>
+                    <p><a href="https://m.facebook.com/rpbandhwa/"><i class="fa fa-facebook-official"></i> Facebook</a></p>
+                    <p><a href="https://www.instagram.com/rpbandhwa/"><i class="fa fa-instagram"></i> Instagram</a></p>
+                    <p><i class="fa fa-twitter"></i> Twitter</p>
+                    <p><i class="fa fa-youtube-play"></i> Youtube</p>
+
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr style="border:1px solid #202733d2;">
+                    <p style="font-size:14px;margin-bottom:10px;" class="copyright text-center mb-4">&copy; 2019-2022
+                        All rights reserved &copy;</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!---to top btn----->
+    <script src="main.js"></script>
+
+    <script>
+        const menuBtn = document.querySelector(".menu-icon span");
+        const searchBtn = document.querySelector(".search-icon");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items");
+        const form = document.querySelector("form");
+        menuBtn.onclick = () => {
+            items.classList.add("active");
+            menuBtn.classList.add("hide");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = () => {
+            items.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            searchBtn.classList.remove("hide");
+            cancelBtn.classList.remove("show");
+            form.classList.remove("active");
+            cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = () => {
+            form.classList.add("active");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

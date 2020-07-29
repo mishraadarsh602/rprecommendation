@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>RP recommendation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!--font-awesome-cdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span></div>
+        <a href="index.html">
+            <div class="logo"><img src="img/logo.jpg" alt="">
+            </div>
+        </a>
+        <div class="nav-items" id="top">
+            <li><a class="actived" href="index.html">Home</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+            <li><a href="https://sowiindia2020.blogspot.com/">Blogs</a></li>
+            <li><a href="#" type="button" data-toggle="modal" data-target="#loginModal">Login</a></li>
+            <li><a href="#" type="button" data-toggle="modal" data-target="#signupModal">Signup</a></li>
+        </div>
+        <div class="search-icon">
+            <span class="fas fa-search"></span></div>
+        <div class="cancel-icon">
+            <span class="fas fa-times"></span></div>
+        <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+    </nav>
+
+    <!------modal for signup-->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="sign-up-form">
+                        <img src="img/signup-icon.png" class="signup-icon" alt="">
+                        <h2>Sign up</h2>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email" id="signupEmail"
+                                    name="signupEmail" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username" id="signupUsername"
+                                    name="signupUsername" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" id="signupPassword"
+                                    name="signupPassword">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label " for="exampleCheck1">I agree to the terms and
+                                    services</label>
+                            </div>
+                            <div class="signup-btn-out">
+                                <input type="submit" class="signup-btn" value="Signup">
+                            </div>
+                            <hr>
+                            <p style="font-size:.8em;color:rgb(105, 105, 7);">Already have an account ? <a href="#"
+                                    data-toggle="modal" data-target="#loginModal">Log in</a></p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!------modal for login-->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="sign-up-form">
+                        <img src="img/signup-icon.png" class="signup-icon" alt="">
+                        <h2>Login Here</h2>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email" id="loginEmail"
+                                    name="loginEmail" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" id="loginPassword"
+                                    name="loginPassword">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label " for="exampleCheck1">Check me out</label>
+                            </div>
+                            <div class="signup-btn-out">
+                                <input type="submit" class="signup-btn" value="Login">
+                            </div>
+                            <hr>
+                            <p style="font-size:.8em;color:rgb(105, 105, 7);">Don't have an account ? <a href="#"
+                                    data-toggle="modal" data-target="#signupModal">Sign up</a></p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--card1-->
+    <div class="container">
+        <div class="card my-4">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <div class="m-4"> <img src="https://www.amazon.com/images/I/71cqmE4ixHL._AC_SX522_.jpg"
+                            class="card-img" alt="..."></div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h4 class="head" style="margin-top:20px;">Mueller Spiral-Ultra Multi-Blade Spiralizer</h4>
+                        <h6>Price : <span style="color:rgba(233, 7, 7, 0.774);">$25.97</span></h6>
+                        <ul style="list-style-type: none;">
+                            <li><b>WHY IS THIS THE BEST SPIRALIZER ON THE MARKET ?</b>
+                                <p class="p-size"> NEWEST, PATENTED DESIGN! Gravity does half the
+                                    work so no awkward sideways pressure is needed. Excellent for making veggie pasta or
+                                    spirals
+                                    for
+                                    healthy vegetable meals. The easiest to use, best spiral slicer-spiralizer for those
+                                    on a
+                                    gluten-free/low carb/raw food/Paleo diet. Replace high carb pasta or noodles with
+                                    healthy
+                                    and
+                                    tasty vegetable equivalents. The Spiral-Ultra will do wonders for your diet.</p>
+                            </li>
+                            <li><b>UNMATCHED QUALITY</b> -<p class="p-size"> Made from BPA-free professional grade,
+                                    heavy duty
+                                    reinforced food grade ABS
+                                    for superior break resistance. Highly versatile thanks to the 4 ultra-sharp German
+                                    420-grade
+                                    .... </p>
+                            </li>
+
+                        </ul>
+                        <div>
+                            <a href="muller1.html" class="btn btn-success float-right view-more">View More</a>
+                            <p class="card-text "><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---stickey goto top btn-->
+    <div class="conatiner to-top-box">
+        <a href="#" class="to-top"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+    <!--card2-->
+    <div class="container">
+        <div class="card my-4">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <div class="m-4"> <img src="https://www.amazon.in/images/I/41f2RtZl78L._SY355_.jpg" class="card-img"
+                            alt="..."></div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h4 class="head" style="margin-top:20px;">Lifelong FitPro LLTM09 (2.5 HP Peak) Motorized
+                            Treadmill for Home </h4>
+                        <h6>Price : <span style="color:rgba(233, 7, 7, 0.774);">₹ 18,299.00</span></h6>
+                        <ul style="list-style-type: none;">
+                            <li><b></b>
+                                <p class="p-size"> Free assistance and service all across India. After Delivery please
+                                    contact us on: [97 11 55 88 77] to get assistance. (Note - Extra charges for
+                                    installation.)</p>
+                            </li>
+                            <li><b></b>
+                                <p class="p-size"> Warranty: 3 years warranty against frame, 1 year motor warranty and 1
+                                    year warranty on parts and manufacturing defect.</p>
+                            </li>
+                            <li><b></b>
+                                <p class="p-size">12 pre-set workout programs to set variable exercise mode for weight
+                                    loss training and endurance training and 8 rubber pads under deck for shock
+                                    absorption... </p>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="treadmil2.html" class="btn btn-success float-right view-more">View More</a>
+                            <p class="card-text "><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--card3-->
+    <div class="container">
+        <div class="card my-4">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <div class="m-4"> <img src="https://www.amazon.com/images/I/61zvtQSBokL._AC_SX355_.jpg"
+                            class="card-img" alt="..."></div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h4 class="head" style="margin-top:20px;">Canon DSLR Camera [EOS 90D] </h4>
+                        <h6>Price : <span style="color:rgba(233, 7, 7, 0.774);">₹ 18,299.00</span></h6>
+                        <ul style="list-style-type: none;">
+                            <li><b></b>
+                                <p class="p-size">High image quality with 32.5 Megapixel CMOS (APS-C) sensor</p>
+                            </li>
+                            <li><b></b>
+                                <p class="p-size"> High-speed continuous shooting of up to 10 fps with no time Lag
+                                    during ovf shooting </p>
+                            </li>
+                            <li><b></b>
+                                <p class="p-size">4K UHD 30P/ Full HD 120P video</p>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="dsler3.html" class="btn btn-success float-right view-more">View More</a>
+                            <p class="card-text "><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--card4-->
+    <div class="container">
+        <div class="card my-4">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <div class="m-4"><img src="https://www.amazon.com/images/I/71yjP59pPmL._AC_UX500_.jpg"
+                            class="card-img" alt="..."></div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h4 class="head" style="margin-top:20px;">Skechers Men's Energy Afterburn Lace-Up Sneaker </h4>
+                        <h6>Price : <span style="color:rgba(233, 7, 7, 0.774);">$39.00 - $115.18</span></h6>
+                        <ul style="list-style-type: none;">
+                            <li><b></b>
+                                <p class="p-size">100% Leather</p>
+                            </li>
+                            <li><b></b>
+                                <p class="p-size"> Imported</p>
+                            </li>
+                            <li><b></b>
+                                <p class="p-size">Rubber sole
+                                </p>
+                            </li>
+                            <li><b></b>
+                                <p class="p-size">1.5 inches heel
+                                </p>
+                            </li>
+                            <li><b></b>
+                                <p class="p-size">Soft fabric shoe lining
+                                </p>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="shoes4.html" class="btn btn-success float-right view-more">View More</a>
+                            <p class="card-text "><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-------footer------>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 ">
+                    <h1>RP recommendation</h1>
+                    <p style="font-size:.8em;">RP recommendation is a blog which recommend best health product, beauty
+                        product, Clothes, and your daily life need, which is recommended after searching from various
+                        digital platforms and based on local reviews. For any products, services or any type of query
+                        please contact us . Thank You ! </p>
+                </div>
+
+
+                <div class="col-6 col-md-4 ">
+                    <h1>Company</h1>
+                    <p>About us</p>
+                    <p>Contact us</p>
+                    <p>Blog</p>
+                    <p>Affiliate</p>
+                </div>
+                <div class="col-6 col-md-4 ">
+                    <h1>Follow us </h1>
+                   <p> <a href="https://m.facebook.com/rpbandhwa/"><i class="fa fa-facebook-official"></i> Facebook</a></p>
+                    <p><a href="https://www.instagram.com/rpbandhwa/"><i class="fa fa-instagram"></i> Instagram</a></p>
+                    <p><i class="fa fa-twitter"></i> Twitter</p>
+                    <p><i class="fa fa-youtube-play"></i> Youtube</p>
+
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr style="border:1px solid #202733d2;">
+                    <p style="font-size:14px;margin-bottom:10px;" class="copyright text-center mb-4">&copy; 2019-2022
+                        All rights reserved &copy;</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!---to top btn----->
+    <script src="main.js"></script>
+
+    <script>
+        const menuBtn = document.querySelector(".menu-icon span");
+        const searchBtn = document.querySelector(".search-icon");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items");
+        const form = document.querySelector("form");
+        menuBtn.onclick = () => {
+            items.classList.add("active");
+            menuBtn.classList.add("hide");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = () => {
+            items.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            searchBtn.classList.remove("hide");
+            cancelBtn.classList.remove("show");
+            form.classList.remove("active");
+            cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = () => {
+            form.classList.add("active");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
